@@ -63,7 +63,7 @@ pipeline
            }
             stage('airtel-uat') {
              steps {
-              build job: airtel-uat // this is dowstream job
+              build job: 'airtel-uat' // this is dowstream job
 
              }
             }
