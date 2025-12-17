@@ -61,6 +61,12 @@ pipeline
         """
               }
            }
+            stage('airtel-uat') {
+             steps {
+              build job: airtel-uat // this is dowstream job
+
+             }
+            }
 
    }  //stages ending
 
